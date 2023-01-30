@@ -9,7 +9,11 @@ function Weather() {
 
     async function fetchWeather() {
         const apikey = '9567ee3ade4553c9fa313ae954cc6677'
-        await fetch()
+        const path = `https://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=${apikey}&units=${unit}`
+        const res = await fetch(path)
+        const json = await res.json()
+
+        console.log(json)
     }
 
     return (
