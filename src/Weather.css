@@ -1,9 +1,13 @@
 .Weather {
-
+    color: rgba(55, 0, 255, 0.514);
 }
 
 .Weather > form {
+    padding: 1rem;
+}
 
+.Weather > small{
+    color: red;
 }
 
 .Weather > form input {
@@ -26,4 +30,5 @@
 
 .Weather > form > select {
     margin: 1rem 0;
+    justify-content: space-between;
 }
